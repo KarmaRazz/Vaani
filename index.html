@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <!-- Logo and Title -->
+        <div class="logo-container">
+            <img src="logo.png" alt="Logo" class="logo"> 
+            <span class="title">Vaani</span>
+        </div>
+        
+        <!-- Menu Items -->
+        <div class="menu">
+            <div class="dropdown">
+                <a href="#" class="menu-item dropdown-toggle">Courses ▾</a>
+                <div class="dropdown-menu">
+                    <div class="dropdown-left">
+                        <ul>
+                            <li class="category" data-category="cse">Computer Science ▸</li>
+                            <li class="category" data-category="programming">Programming Languages ▸</li>
+                            <li class="category" data-category="electronics">Electronics & Communication ▸</li>
+                            <li class="category" data-category="electrical">Electrical ▸</li>
+                            <li class="category" data-category="others">Others ▸</li>
+                        </ul>
+                    </div>
+                    <div class="dropdown-right">
+                        <ul id="course-list">
+                            <!-- Subjects will be loaded dynamically -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="menu-item">Forum</a>
+            <a href="#" class="menu-item">Books</a>
+            <a href="#" class="menu-hiring">We’re <span class="hiring-highlight">Hiring!</span></a>
+        </div>
+        
+        <!-- Icons and Buttons -->
+        <div class="icons-buttons">
+            <button class="icon">🔍</button>
+            <button class="icon">📌</button>
+            <button class="icon">▶️</button>
+            
+            <!-- Login and Sign-up Buttons -->
+            <button class="login-button">LOGIN</button>
+            <button class="signup-button">SIGN UP</button>
+        </div>
+    </nav>
+    <script src="script"></script>
+</body>
+</html>
